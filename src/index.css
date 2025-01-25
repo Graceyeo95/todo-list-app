@@ -10,3 +10,9 @@ body {
   width: 100vw;
   height: 100vh;
 }
+
+@layer components {
+  .action-button {
+    @apply text-white px-3 py-2 rounded-md text-[14px];
+  }
+}

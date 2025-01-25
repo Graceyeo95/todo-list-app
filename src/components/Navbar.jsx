@@ -7,7 +7,7 @@ const Navbar = () => {
   const [isDarkMode, toggleDarkMode] = useDarkMode();
 
   return (
-    <div className='p-[20px] flex justify-center items-center gap-x-6 lg:gap-x-12 w-full ml-auto'>
+    <div className='p-[20px] text-white flex justify-center items-center gap-x-6 lg:gap-x-12 w-full ml-auto'>
       <h1 className='text-lg lg:text-2xl'>TODO LIST APP</h1>
 
       <div className='flex gap-x-2 items-center'>
@@ -16,7 +16,7 @@ const Navbar = () => {
           checked={isDarkMode}
           onChange={toggleDarkMode}
           className={`${
-            isDarkMode ? 'bg-green-600' : 'bg-gray-600'
+            isDarkMode ? 'bg-green-600' : 'bg-gray-400'
           } relative inline-flex h-6 w-11 items-center rounded-full`}
         >
           <span
