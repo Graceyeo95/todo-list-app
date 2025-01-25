@@ -1,35 +1,16 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import useDarkMode from './hook/useDarkMode';
 
-function App() {
-  const [count, setCount] = useState(0)
+const DarkModeToggle = () => {
+  const [isDarkMode, toggleDarkMode] = useDarkMode();
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <button
+      onClick={toggleDarkMode}
+      className='p-2 rounded bg-gray-200 dark:bg-gray-900 text-gray-900 dark:text-gray-100'
+    >
+      {isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+    </button>
+  );
+};
 
-export default App
+export default DarkModeToggle;
