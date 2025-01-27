@@ -122,7 +122,10 @@ const Todolist = () => {
         </div>
       </div>
 
-      <Button onClick={handleClearAll} className='ml-auto flex text-lg'>
+      <Button
+        onClick={handleClearAll}
+        className='ml-auto flex text-lg dark:text-white text-black'
+      >
         Clear All
       </Button>
 

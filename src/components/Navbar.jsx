@@ -7,7 +7,7 @@ const Navbar = () => {
   const [isDarkMode, toggleDarkMode] = useDarkMode();
 
   return (
-    <div className='p-[20px] text-white flex justify-center items-center gap-x-6 lg:gap-x-12 w-full ml-auto'>
+    <div className='p-[20px] dark:text-white text-black flex justify-center items-center gap-x-6 lg:gap-x-12 w-full ml-auto'>
       <h1 className='text-lg lg:text-3xl font-bold'>TODO LIST</h1>
 
       <div className='flex gap-x-2 items-center'>
