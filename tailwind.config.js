@@ -8,8 +8,10 @@ export default {
         dark: '#111827',
         light: '#f9fafb',
         blue: '#3b82f6',
+        red: '#dc2626',
+        green: '#16a34a',
       },
     },
   },
-  plugins: [],
+  plugins: [require('tailwind-scrollbar-hide')],
 };
