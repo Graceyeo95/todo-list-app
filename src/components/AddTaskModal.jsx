@@ -44,7 +44,7 @@ const AddTaskModal = ({ setOpenModal }) => {
               onChange={(e) => setNewTodo(e.target.value)}
             />
             <Button className='bg-black' type='submit'>
-              Add Todo
+              Add Task
             </Button>
           </div>
         </form>

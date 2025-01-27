@@ -8,7 +8,7 @@ const Navbar = () => {
 
   return (
     <div className='p-[20px] text-white flex justify-center items-center gap-x-6 lg:gap-x-12 w-full ml-auto'>
-      <h1 className='text-lg lg:text-2xl'>TODO LIST APP</h1>
+      <h1 className='text-lg lg:text-3xl font-bold'>TODO LIST</h1>
 
       <div className='flex gap-x-2 items-center'>
         <LuSun className='size-5 lg:size-6' />
